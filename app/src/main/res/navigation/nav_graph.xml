@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstPageFragment">
+
+    <fragment
+        android:id="@+id/firstPageFragment"
+        android:name="com.example.danielapp.FirstPageFragment"
+        android:label="fragment_first_page"
+        tools:layout="@layout/fragment_first_page" >
+        <action
+            android:id="@+id/action_firstPageFragment_to_loginFragmentt"
+            app:destination="@id/loginFragmentt" />
+        <action
+            android:id="@+id/action_firstPageFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.danielapp.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_firstPageFragment"
+            app:destination="@id/firstPageFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragmentt"
+            app:destination="@id/loginFragmentt" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragmentt"
+        android:name="com.example.danielapp.LoginFragmentt"
+        android:label="fragment_login_fragmentt"
+        tools:layout="@layout/fragment_login_fragmentt" >
+        <action
+            android:id="@+id/action_loginFragmentt_to_firstPageFragment"
+            app:destination="@id/firstPageFragment" />
+    </fragment>
+</navigation>

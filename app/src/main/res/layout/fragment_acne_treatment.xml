@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Treatments.AcneTreatment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="245dp"
+        android:layout_height="132dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/akne"
+        app:layout_constraintBottom_toTopOf="@+id/guideline33"
+        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+        app:layout_constraintStart_toStartOf="@+id/guideline34"
+        app:layout_constraintTop_toTopOf="@+id/guideline32" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="484dp" />
+
+    <Button
+        android:id="@+id/btn_AkneTreatment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הזמן תור"
+        android:background="@drawable/buttonshape"
+        app:layout_constraintBottom_toTopOf="@+id/guideline38"
+        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+        app:layout_constraintStart_toStartOf="@+id/guideline34"
+        app:layout_constraintTop_toTopOf="@+id/guideline37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="549dp" />
+
+    <TextView
+        android:id="@+id/tv_AkneTreatment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="טיפול אקנה"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <ScrollView
+        android:layout_width="284dp"
+        android:layout_height="276dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline37"
+        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+        app:layout_constraintStart_toStartOf="@+id/guideline34"
+        app:layout_constraintTop_toTopOf="@+id/guideline33">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_Akne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="טיפולי אקנה – מהקל ועד הקשה ביותר
+הטיפול החדשני והמודרני ביותר לאקנה ובצלקות אקנה בכל שלביו.
+ראשית יש לבצע אבחון עור ולזהות את סוג האקנה ממנו אתם סובלים.
+\n
+
+אנו מחלקים את האקנה לארבעה סוגים :
+\n
+אקנה קומודניקה–  ראשים שחורים שיוצרים פקק ומונעים מהשומן לצאת כלפי חוץ
+אופן הטיפול: 2-4 טיפולים + חומרים פעילים לשימוש ביתי
+\n
+אקנה פוסטולות–  פצעים מוגלתיים עם ראש לבן, מעט יותר גדולים, גורמים לאי נעימות אך עדיין לא מהווים סיכון עתידי.
+אופן הטיפול: 4-6 טיפולים כוללים טכנולוגיה מבוססת אור + חומרים פעילים לשימוש ביתי
+\n
+אקנה פפולות– פצעים חמורים יותר, אדומים ללא מוגלה, מורמים מעל פני שטח העור
+ורגישים מאוד למגע.
+אופן הטיפול: 8 טיפולים כוללים טכנולוגיה מתקדמת + חומרים פעילים מתאימים לשימוש ביתי.
+\n
+פוסט אקנה– השלב בו האקנה כבר לא דלקתי אך מתבטא בסימנים כהים וצלקות שקועות שנותרו על פני העור.
+אופן הטיפול: 6-8 טיפולים הכוללים:
+	•	מכשיר RF” המעודד ייצור טבעי של קולגן בעומק העור ומגן על הלחות הטבעית
+            •	תכשיר אקטיבי מבית חווה זינגבויים." />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

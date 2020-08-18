@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "708392284699",
+    "firebase_url": "https://danielapp-bd17f.firebaseio.com",
+    "project_id": "danielapp-bd17f",
+    "storage_bucket": "danielapp-bd17f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708392284699:android:10cb0f0de59be6f37afebe",
+        "android_client_info": {
+          "package_name": "com.example.danielapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708392284699-cvejr3d0fi5127e8apavllahcr3chupp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.danielapp",
+            "certificate_hash": "e6ebd106ca817c30d10a3168559f82f1530c0836"
+          }
+        },
+        {
+          "client_id": "708392284699-ur4j5g2uktnd5r7u8tok2kqatra82kqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoxQTbSKBHlTER4RtK4K3sMC82mbLmgMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708392284699-ur4j5g2uktnd5r7u8tok2kqatra82kqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

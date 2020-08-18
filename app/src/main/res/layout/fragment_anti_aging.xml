@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Treatments.AntiAging">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="245dp"
+        android:layout_height="132dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/anti_aging"
+        app:layout_constraintBottom_toTopOf="@+id/guideline33"
+        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+        app:layout_constraintStart_toStartOf="@+id/guideline34"
+        app:layout_constraintTop_toTopOf="@+id/guideline32" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="484dp" />
+
+    <Button
+        android:id="@+id/btn_AntiAging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הזמן תור"
+        android:background="@drawable/buttonshape"
+        app:layout_constraintBottom_toTopOf="@+id/guideline38"
+        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+        app:layout_constraintStart_toStartOf="@+id/guideline34"
+        app:layout_constraintTop_toTopOf="@+id/guideline37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="549dp" />
+
+    <TextView
+        android:id="@+id/tv_AntiAging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="אנטי אייג'ינג"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <ScrollView
+        android:layout_width="284dp"
+        android:layout_height="276dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline37"
+        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+        app:layout_constraintStart_toStartOf="@+id/guideline34"
+        app:layout_constraintTop_toTopOf="@+id/guideline33">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_Akne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="אנטי אייגינג – להצערת העור
+מתחלקים לשני קטגוריות
+	•	עור צעיר +30
+	•	עור מתבגר +45
+
+\n
+
+טיפולי אנטי אייג'ינג בגיל צעיר
+בעבר היה נהוג לחשוב כי טיפולי אנטי אייג'ינג מיועדים לגילאי 45 ומעלה.
+כיום עם הגברת המודעות לטיפולים קוסמטיים ושמירה נכונה על עור הפנים, נשים רבות כבר יודעות ומודעות לכך שטיפולי אנטי אייג'ינג מתחילים כבר בגילאי 27-30
+
+ \n
+
+נזקי השמש, זיהום האוויר ותזונה לקויה הם הגורמים העיקריים להזדקנות העור.
+אני ממליצה להתחיל ולטפל בעור הפנים דווקא מגיל 30 ולתת לו את 'התזונה' לה הוא זקוק.
+
+ \n
+
+תחזוק עור הפנים מגיל צעיר יגרום לטיפולים פחות אינטנסיביים, ולחיסכון של אלפי שקלים בגיל מבוגר יותר, זאת כתוצאה משמירה על נפח העור, ייצור תמידי ומתחדש של קולגן השומר על מרקם העור.
+זכרי כי טיפול בקמט קטן או קמטוט הרבה יותר קל מאשר בקמטים עמוקים בהם אין כבר מה שיתמוך והפתרון הוא רק סכין המנתחים או הזרקות מרובות.
+ 
+\n
+
+טיפול אנטי אייג’ינג בעור מתבגר
+הזדקנות העור היא הליך טבעי שאי אפשר למנוע אותו, אך כן אפשר לעכב אותו.
+טיפולי אנטי–אייג'ינג מחדשים את תאי העור וממריצים דם לתאים  וכך מונעים עור רפוי והיווצרות של קמטוטים.
+ככל שמתבגרים העור נעשה דק ויבש, זאת מכיוון שהעור מאבד בהדרגתיות את הקולגן ואת האלסטין שבו. הקולגן הוא חלבון שאחראי, בין היתר, על הנפח ועל העובי של העור, האלסטין הוא חלבון שאחראי על הגמישות של העור והוא מאפשר לרקמות לשמור על צורתן המקורית והמתוחה.
+ישנם סוגים שונים של טיפולי אנטי-אייג'ינג אשר אותם מתאימים באופן אישי לכל אחד לפי עור הפנים שלו. טיפולים אלה נועדו להסיר תאים מתים ולהאיץ צמיחה של תאים חדשים וכן להמריץ את הדם לעור הפנים ולספק חמצן לתאים. ברוב הטיפולים הללו משתמשים בפילינג איכותי אשר מנקה את העור ומכין אותו לקראת החדרה של חומרים מזינים. כמו כן, טיפולי אנטי-אייג'ינג יכולים לכלול מסכות קולגן ושימוש בסרומים המכילים חומרים נוגדי חמצון כמו ויטמין C וחומצה היאלורונית אשר מושכת מים לתאים." />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

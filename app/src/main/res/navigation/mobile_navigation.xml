@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.danielapp.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_faceTreatmentsFragment"
+            app:destination="@id/faceTreatmentsFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_layzerFragment"
+            app:destination="@id/layzerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.danielapp.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.danielapp.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/faceTreatmentsFragment"
+        android:name="com.example.danielapp.ui.home.FaceTreatmentsFragment"
+        android:label="fragment_face_treatments"
+        tools:layout="@layout/fragment_face_treatments" >
+        <action
+            android:id="@+id/action_faceTreatmentsFragment_to_acneTreatment"
+            app:destination="@id/acneTreatment" />
+        <action
+            android:id="@+id/action_faceTreatmentsFragment_to_pigmentation2"
+            app:destination="@id/pigmentation2" />
+        <action
+            android:id="@+id/action_faceTreatmentsFragment_to_antiAging"
+            app:destination="@id/antiAging" />
+        <action
+            android:id="@+id/action_faceTreatmentsFragment_to_faceTreatment"
+            app:destination="@id/faceTreatment" />
+        <action
+            android:id="@+id/action_faceTreatmentsFragment_to_glowTreatment"
+            app:destination="@id/glowTreatment" />
+        <action
+            android:id="@+id/action_faceTreatmentsFragment_to_cosmeticAcupuncture"
+            app:destination="@id/cosmeticAcupuncture" />
+    </fragment>
+    <fragment
+        android:id="@+id/dateAndTimeFragment"
+        android:name="com.example.danielapp.ui.DateFragment"
+        android:label="fragment_date_and_time"
+        tools:layout="@layout/fragment_date" >
+        <action
+            android:id="@+id/action_dateAndTimeFragment_to_timeFragment"
+            app:destination="@id/timeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timeFragment"
+        android:name="com.example.danielapp.TimeFragment"
+        android:label="fragment_time"
+        tools:layout="@layout/fragment_time" >
+        <action
+            android:id="@+id/action_timeFragment_to_beforeLastPage"
+            app:destination="@id/beforeLastPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/acneTreatment"
+        android:name="com.example.danielapp.Treatments.AcneTreatment"
+        android:label="fragment_acne_treatment"
+        tools:layout="@layout/fragment_acne_treatment" >
+        <action
+            android:id="@+id/action_acneTreatment_to_dateAndTimeFragment"
+            app:destination="@id/dateAndTimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/beforeLastPage"
+        android:name="com.example.danielapp.BeforeLastPage"
+        android:label="fragment_before_last_page"
+        tools:layout="@layout/fragment_before_last_page" >
+        <action
+            android:id="@+id/action_beforeLastPage_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/pigmentation2"
+        android:name="com.example.danielapp.Treatments.Pigmentation"
+        android:label="fragment_pigmentation"
+        tools:layout="@layout/fragment_pigmentation" >
+        <action
+            android:id="@+id/action_pigmentation2_to_dateAndTimeFragment"
+            app:destination="@id/dateAndTimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/antiAging"
+        android:name="com.example.danielapp.Treatments.AntiAging"
+        android:label="fragment_anti_aging"
+        tools:layout="@layout/fragment_anti_aging" >
+        <action
+            android:id="@+id/action_antiAging_to_dateAndTimeFragment"
+            app:destination="@id/dateAndTimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/faceTreatment"
+        android:name="com.example.danielapp.Treatments.FaceTreatment"
+        android:label="fragment_face_treatment"
+        tools:layout="@layout/fragment_face_treatment" >
+        <action
+            android:id="@+id/action_faceTreatment_to_dateAndTimeFragment"
+            app:destination="@id/dateAndTimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/glowTreatment"
+        android:name="com.example.danielapp.Treatments.GlowTreatment"
+        android:label="fragment_glow_treatment"
+        tools:layout="@layout/fragment_glow_treatment" >
+        <action
+            android:id="@+id/action_glowTreatment_to_dateAndTimeFragment"
+            app:destination="@id/dateAndTimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cosmeticAcupuncture"
+        android:name="com.example.danielapp.Treatments.CosmeticAcupuncture"
+        android:label="fragment_cosmetic_acupuncture"
+        tools:layout="@layout/fragment_cosmetic_acupuncture" >
+        <action
+            android:id="@+id/action_cosmeticAcupuncture_to_dateAndTimeFragment"
+            app:destination="@id/dateAndTimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/layzerFragment"
+        android:name="com.example.danielapp.ui.home.LayzerFragment"
+        android:label="fragment_layzer"
+        tools:layout="@layout/fragment_layzer" />
+</navigation>
